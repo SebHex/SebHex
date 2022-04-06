@@ -232,6 +232,10 @@
           letter-spacing: 0.1px;
         }
 
+        .chip:hover {
+          background-color: var(--md-sys-color-on-secondary);
+        }
+
         .chip .icon {
           margin-right: 8px;
         }
