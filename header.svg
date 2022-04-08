@@ -253,7 +253,7 @@
           display: inline-flex;
           align-items: center;
           padding: 6px 16px 6px 8px;
-          border: 1px solid var(--md-sys-color-outline);
+          border: 2px solid var(--md-sys-color-outline);
           border-radius: 8px;
           margin-right: 10px;
           font-size: 14px;
