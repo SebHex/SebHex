@@ -104,10 +104,18 @@
           height: 360px;
           border-radius: 64px;
           animation: fadeIn 500ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        .content,
+        .header {
           transition: padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         @media (max-width: 520px) {
+          .content {
+            padding: 40px 24px;
+          }
+
           .header {
             padding: 0 68px;
           }
