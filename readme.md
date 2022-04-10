@@ -1,3 +1,3 @@
 <a href="#🌌">
-  <img alt="Header" src="header.svg">
+  <img width="846" height="440" alt="Header" src="header.svg">
 </a>
