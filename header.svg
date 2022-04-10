@@ -25,7 +25,7 @@
 
       <style>
         :root {
-          --svg-width: 846px
+          --svg-width: 846px;
           --md-sys-color-primary: #7fcfff;
           --md-sys-color-on-primary: #00344c;
           --md-sys-color-primary-container: #004c6c;
