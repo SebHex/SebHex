@@ -71,7 +71,7 @@
           transition-duration: 250ms;
         }
 
-         @media (max-width: 767px) {
+         @media (max-width: 648px) {
           h1 {
             font-size: 45px;
             line-height: 52px;
@@ -104,6 +104,25 @@
           height: 360px;
           border-radius: 64px;
           animation: fadeIn 500ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+          transition: padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @media (max-width: 520px) {
+          .header {
+            padding: 0 68px;
+          }
+        }
+
+        @media (max-width: 460px) {
+          .header {
+            padding: 0 48px;
+          }
+        }
+
+        @media (max-width: 400px) {
+          .header {
+            padding: 0 28px;
+          }
         }
 
         .header > * {
