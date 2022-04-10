@@ -15,7 +15,6 @@
             </h1>
             <div class="description">
               Passionate software engineer
-              <br />
               with an attention to detail.
             </div>
           </div>         
@@ -68,6 +67,20 @@
           font-weight: 500;
           line-height: 72px;
           letter-spacing: -0.5px;
+          transition-property: font-size, line-height, letter-spacing;
+          transition-duration: 250ms;
+        }
+
+         @media (max-width: 767px) {
+          h1 {
+            font-size: 45px;
+            line-height: 52px;
+            letter-spacing: 0;
+          }
+
+          svg {
+            height: 100% !important;
+          }
         }
 
         p {
@@ -83,6 +96,7 @@
 
         .header {
           display: flex;
+          flex-direction: column;
           position: relative;
           overflow: hidden;
           padding: 0 88px;
@@ -138,6 +152,7 @@
           font-size: 24px;
           line-height: 32px;
           color: var(--md-sys-color-inverse-on-surface);
+          max-width: 360px;
         }
       </style>
 
