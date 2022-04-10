@@ -15,7 +15,7 @@
               Passionate software engineer
               with an attention to detail.
             </div>
-          </div>         
+          </div>
         </header>
       </main>
 
@@ -74,10 +74,6 @@
             font-size: 45px;
             line-height: 52px;
             letter-spacing: 0;
-          }
-
-          svg {
-            height: 100% !important;
           }
         }
 
