@@ -116,6 +116,10 @@
         }
 
         @media (max-width: 460px) {
+          .content {
+            padding: 40px 0;
+          }
+
           .header {
             padding: 0 48px;
           }
