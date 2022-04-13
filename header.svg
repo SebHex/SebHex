@@ -21,33 +21,33 @@
 
       <style>
         :root {
-          --md-sys-color-primary: #7fcfff;
-          --md-sys-color-on-primary: #00344c;
-          --md-sys-color-primary-container: #004c6c;
-          --md-sys-color-on-primary-container: #c4e7ff;
-          --md-sys-color-secondary: #b6c9d8;
-          --md-sys-color-on-secondary: #21333e;
-          --md-sys-color-secondary-container: #374955;
-          --md-sys-color-on-secondary-container: #d2e5f4;
-          --md-sys-color-tertiary: #ccc1e9;
-          --md-sys-color-on-tertiary: #332b4b;
-          --md-sys-color-tertiary-container: #4a4263;
-          --md-sys-color-on-tertiary-container: #e9ddff;
-          --md-sys-color-error: #ffb4a9;
-          --md-sys-color-error-container: #930006;
-          --md-sys-color-on-error: #680003;
-          --md-sys-color-on-error-container: #ffdad4;
-          --md-sys-color-background: #191c1e;
-          --md-sys-color-on-background: #e1e2e5;
-          --md-sys-color-surface: #191c1e;
-          --md-sys-color-on-surface: #e1e2e5;
-          --md-sys-color-surface-variant: #41484d;
-          --md-sys-color-on-surface-variant: #c1c7ce;
-          --md-sys-color-outline: #8b9298;
-          --md-sys-color-inverse-on-surface: #191c1e;
-          --md-sys-color-inverse-surface: #e1e2e5;
-          --md-sys-color-inverse-primary: #00658e;
-          --md-sys-color-shadow: #000000;
+          --color-primary: #7fcfff;
+          --color-on-primary: #00344c;
+          --color-primary-container: #004c6c;
+          --color-on-primary-container: #c4e7ff;
+          --color-secondary: #b6c9d8;
+          --color-on-secondary: #21333e;
+          --color-secondary-container: #374955;
+          --color-on-secondary-container: #d2e5f4;
+          --color-tertiary: #ccc1e9;
+          --color-on-tertiary: #332b4b;
+          --color-tertiary-container: #4a4263;
+          --color-on-tertiary-container: #e9ddff;
+          --color-error: #ffb4a9;
+          --color-error-container: #930006;
+          --color-on-error: #680003;
+          --color-on-error-container: #ffdad4;
+          --color-background: #191c1e;
+          --color-on-background: #e1e2e5;
+          --color-surface: #191c1e;
+          --color-on-surface: #e1e2e5;
+          --color-surface-variant: #41484d;
+          --color-on-surface-variant: #c1c7ce;
+          --color-outline: #8b9298;
+          --color-inverse-on-surface: #191c1e;
+          --color-inverse-surface: #e1e2e5;
+          --color-inverse-primary: #00658e;
+          --color-shadow: #000000;
         }
 
         * {
@@ -184,13 +184,13 @@
         }
 
         .header .title {
-          color: var(--md-sys-color-inverse-on-surface);
+          color: var(--color-inverse-on-surface);
           margin: 0;
           animation-delay: 250ms;
         }
 
         .header .description {
-          color: var(--md-sys-color-inverse-on-surface);
+          color: var(--color-inverse-on-surface);
           margin-top: 16px;
           font-size: 24px;
           line-height: 32px;
