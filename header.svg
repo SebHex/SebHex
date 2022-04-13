@@ -23,6 +23,7 @@
         :root {
           --padding-content: 40px;
           --padding-header: 0 88px;
+          --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           --color-primary: #7fcfff;
           --color-on-primary: #00344c;
           --color-primary-container: #004c6c;
@@ -100,12 +101,13 @@
           border-radius: 64px;
           padding: var(--padding-header);
           opacity: 0;
-          animation: fadeIn 500ms cubic-bezier(0.4, 0, 0.2, 1) 250ms forwards;
+          animation:
+            fadeIn 500ms var(--animation-timing-function) 250ms forwards;
         }
 
         .content,
         .header {
-          transition: padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          transition: padding 250ms var(--animation-timing-function);
         }
 
         @media (max-width: 520px) {
@@ -173,7 +175,7 @@
         .header .title,
         .header .description {
           opacity: 0;
-          animation: fadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+          animation: fadeIn 1s var(--animation-timing-function) forwards;
         }
 
         .header .title {
