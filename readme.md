@@ -6,4 +6,3 @@
 
 - A cryptocurrency bot app
 - Portfolio app
-- 
