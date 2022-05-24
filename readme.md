@@ -4,4 +4,6 @@
 
 ## Currently working on
 
-A cryptocurrency bot app.
+- A cryptocurrency bot app
+- Portfolio app
+- 
