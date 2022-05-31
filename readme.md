@@ -2,7 +2,7 @@
   <img alt="Header" width="846" height="440" src="header.svg">
 </a>
 
-## Currently working on
+## Current projects
 
-- A cryptocurrency bot app
+- Cryptocurrency bot app
 - Portfolio app
