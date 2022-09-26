@@ -4,6 +4,7 @@
 
 ## Current projects
 
+- Company app
 - Shorts bot
 - Cryptocurrency bot app
 - Portfolio app
