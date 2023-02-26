@@ -22,14 +22,14 @@
       </main>
 
       <svg xmlns="http://www.w3.org/2000/svg">
-        <filter id="chromatic-aberration">
+        <filter id="chromatic-aberration-high">
           <feColorMatrix type="matrix"
             result="red_"
             values="4 0 0 0 0
                     0 0 0 0 0
                     0 0 0 0 0
                     0 0 0 1 0"/>
-          <feOffset in="red_" dx="2.25" dy="0" result="red"/>
+          <feOffset in="red_" dx="1.5" dy="0" result="red"/>
           <feColorMatrix type="matrix"
             in="SourceGraphic"
             result="blue_"
@@ -37,7 +37,26 @@
                     0 3 0 0 0
                     0 0 10 0 0
                     0 0 0 1 0"/>
-          <feOffset in="blue_" dx="-2.25" dy="0" result="blue"/>
+          <feOffset in="blue_" dx="-1.5" dy="0" result="blue"/>
+          <feBlend mode="screen" in="red" in2="blue"/>
+        </filter>
+
+        <filter id="chromatic-aberration-low">
+          <feColorMatrix type="matrix"
+            result="red_"
+            values="4 0 0 0 0
+                    0 0 0 0 0
+                    0 0 0 0 0
+                    0 0 0 1 0"/>
+          <feOffset in="red_" dx="1.25" dy="0" result="red"/>
+          <feColorMatrix type="matrix"
+            in="SourceGraphic"
+            result="blue_"
+            values="0 0 0 0 0
+                    0 3 0 0 0
+                    0 0 10 0 0
+                    0 0 0 1 0"/>
+          <feOffset in="blue_" dx="-1.25" dy="0" result="blue"/>
           <feBlend mode="screen" in="red" in2="blue"/>
         </filter>
       </svg>
@@ -47,6 +66,7 @@
           --padding-content: 40px;
           --padding-header: 0 88px;
           --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          --chromatic-aberration: url(#chromatic-aberration-high);
         }
 
         * {
@@ -65,14 +85,6 @@
           letter-spacing: -0.5px;
           transition-property: font-size, line-height, letter-spacing;
           transition-duration: 250ms;
-        }
-
-         @media (max-width: 668px) {
-          h1 {
-            font-size: 45px;
-            line-height: 52px;
-            letter-spacing: 0;
-          }
         }
 
         p {
@@ -105,6 +117,18 @@
           transition: padding 250ms var(--animation-timing-function);
         }
 
+        @media (max-width: 668px) {
+          :root {
+            --chromatic-aberration: url(#chromatic-aberration-low);
+          }
+
+          h1 {
+            font-size: 45px;
+            line-height: 52px;
+            letter-spacing: 0;
+          }
+        }
+
         @media (max-width: 520px) {
           :root {
             --padding-content: 40px 24px;
@@ -135,8 +159,9 @@
           }
         }
 
-        .header {
-          filter: url(#chromatic-aberration);
+        .header,
+        .header .background {
+          filter: var(--chromatic-aberration);
         }
 
         .header .background {
@@ -151,7 +176,6 @@
           background-color: #c4e7ff;
           background-image: var(--background-image);
           animation: rotate 200s infinite linear;
-          filter: url(#chromatic-aberration);
         }
 
         .header .darken {
