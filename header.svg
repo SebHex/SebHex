@@ -41,7 +41,7 @@
           <feBlend mode="screen" in="red" in2="blue"/>
         </filter>
 
-        <filter id="chromatic-aberration-low">
+        <filter id="chromatic-aberration-medium">
           <feColorMatrix type="matrix"
             result="red_"
             values="4 0 0 0 0
@@ -57,6 +57,25 @@
                     0 0 10 0 0
                     0 0 0 1 0"/>
           <feOffset in="blue_" dx="-1.25" dy="0" result="blue"/>
+          <feBlend mode="screen" in="red" in2="blue"/>
+        </filter>
+
+        <filter id="chromatic-aberration-low">
+          <feColorMatrix type="matrix"
+            result="red_"
+            values="4 0 0 0 0
+                    0 0 0 0 0
+                    0 0 0 0 0
+                    0 0 0 1 0"/>
+          <feOffset in="red_" dx="1" dy="0" result="red"/>
+          <feColorMatrix type="matrix"
+            in="SourceGraphic"
+            result="blue_"
+            values="0 0 0 0 0
+                    0 3 0 0 0
+                    0 0 10 0 0
+                    0 0 0 1 0"/>
+          <feOffset in="blue_" dx="-1" dy="0" result="blue"/>
           <feBlend mode="screen" in="red" in2="blue"/>
         </filter>
       </svg>
@@ -119,7 +138,7 @@
 
         @media (max-width: 668px) {
           :root {
-            --chromatic-aberration: url(#chromatic-aberration-low);
+            --chromatic-aberration: url(#chromatic-aberration-medium);
           }
 
           h1 {
@@ -140,6 +159,7 @@
           :root {
             --padding-content: 40px 0;
             --padding-header: 0 48px;
+            --chromatic-aberration: url(#chromatic-aberration-low);
           }
         }
 
